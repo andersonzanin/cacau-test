@@ -1,0 +1,30 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="form-group">
+          <label for="orderBy">Ordenar por:</label>
+          <select class="form-control" id="orderBy" [(ngModel)]="selectedOrder">
+            <option value="title">Título</option>
+            <option value="category">Categoria</option>
+            <option value="price">Preço</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let product of sortedProducts">
+        <div class="card card-custom shadow-sm">
+          <img class="card-img-top img-fluid mt-2" src="{{product.image}}" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text"><strong>Categoria: </strong>{{product.category}}</p>
+            <p class="card-text"><strong>Preço: </strong>{{product.price | currency}}</p>
+            <div class="buttons">
+              <a class="btn btn-dark" routerLink="/products/description/{{product.id}}">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

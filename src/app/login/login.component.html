@@ -1,0 +1,16 @@
+<p>
+<p>
+<form action="/action_page.php">
+    <div class="container-fluid col-md-4">
+      <label for="username" class="form-label">Usuário:</label>
+      <input id="username" class="form-control" type="text" [(ngModel)]="username" name="username" required placeholder="Usuário">
+    </div>
+    <div class="container-fluid col-md-4">
+      <label for="pwd" class="form-label">Senha:</label>
+      <input id="password" class="form-control" type="password" [(ngModel)]="password" name="password" required placeholder="Senha">
+    </div><p>
+    <div class="container-fluid col-md-4">
+    <button (click)="onSubmit()" class="btn btn-dark">Entrar</button>
+    </div>
+  </form>
+
