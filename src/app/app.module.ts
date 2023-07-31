@@ -10,7 +10,7 @@ import { ProductsComponent } from './products/products.component';
 import ptBr from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+
 
 registerLocaleData(ptBr);
 
@@ -20,7 +20,7 @@ registerLocaleData(ptBr);
     LoginComponent,
     ProductsComponent,
     ProductDescriptionComponent,
-    ShoppingCartComponent,
+
   ],
   imports: [
     BrowserModule,

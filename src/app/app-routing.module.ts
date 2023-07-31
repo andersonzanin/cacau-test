@@ -6,6 +6,7 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { AuthGuard } from './Services/auth.guard';
 
 
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'products', component: ProductsComponent, canActivate: [AuthGuard] },
